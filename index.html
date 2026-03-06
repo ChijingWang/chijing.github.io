@@ -146,7 +146,6 @@
             color: var(--primary-color);
         }
         
-        /* Clean section styling */
         section {
             padding: var(--section-padding);
             margin-bottom: 1rem;
@@ -183,7 +182,6 @@
             color: var(--text-color);
         }
         
-        /* Project section */
         .project-container {
             margin-top: 2rem;
         }
@@ -281,7 +279,6 @@
             margin-right: 0.3rem;
         }
         
-        /* Timeline style for education and experience */
         .timeline {
             position: relative;
             margin: 2rem 0;
@@ -321,7 +318,6 @@
             color: var(--text-color);
         }
         
-        /* Publications styling */
         .publications-container {
             margin-top: 2rem;
         }
@@ -364,7 +360,6 @@
             margin-right: 1rem;
         }
         
-        /* Awards styling */
         .awards-container {
             margin-top: 2rem;
         }
@@ -390,7 +385,6 @@
             font-size: 0.95rem;
         }
         
-        /* Skills styling */
         .skills-container {
             display: flex;
             flex-wrap: wrap;
@@ -419,7 +413,6 @@
             font-size: 1rem;
         }
         
-        /* Contact styling */
         .contact-content {
             display: flex;
             justify-content: flex-start;
@@ -446,7 +439,6 @@
             margin-right: 0.5rem;
         }
         
-        /* Visitor counter - smaller size */
         .visitor-counter {
             margin-top: 3rem;
             text-align: center;
@@ -457,7 +449,6 @@
             color: var(--text-color);
         }
         
-        /* Add style to make the ClusterMaps widget smaller */
         #clustrmaps-widget-container {
             transform: scale(0.7);
             transform-origin: center top;
@@ -465,7 +456,6 @@
             max-width: 300px;
         }
         
-        /* Footer styling */
         footer {
             background-color: var(--secondary-color);
             padding: 2rem 0;
@@ -501,7 +491,6 @@
             background-color: var(--accent-color);
         }
         
-        /* Language switcher styling */
         .language-switcher {
             margin-left: 1rem;
         }
@@ -547,7 +536,6 @@
             display: block;
         }
         
-        /* Responsive styles */
         @media (max-width: 768px) {
             .header-container {
                 flex-direction: column;
@@ -639,16 +627,19 @@
                     <div class="hero-right">
                         <div class="hero-text" lang="en">
                             <p>I am a PhD candidate at the University of Tokyo (UTokyo), <a href="https://www.lhei.k.u-tokyo.ac.jp/#top" style="text-decoration: underline;">HeiLab</a>, advised by Prof. Shin'ichi Warisawa and Associate Prof. Yuki Ban. My research focuses on developing quantitative indicators of sleep quality by integrating biosignals such as EEG, ECG, EDA, and respiration.</p>
+                            <p>I am also studying how sleep environments can be adaptively controlled using air conditioners and other devices to regulate thermal comfort during sleep and improve recovery.</p>
                             <p>My interests include sleep science, human-computer interaction, biosignal analysis, and AI-driven healthcare technologies.</p>
                         </div>
                         
                         <div class="hero-text" lang="ja">
                             <p>東京大学大学院の博士課程に在籍しており，割澤伸一教授の指導のもと，脳波・心電・皮膚電位・呼吸などの生体情報を用いた睡眠の質の定量評価指標の開発に取り組んでいます．</p>
+                            <p>加えて，睡眠中の温熱快適性と回復を高めることを目的として，空調などの睡眠環境機器を用いた適応的な睡眠環境制御についても研究しています．</p>
                             <p>研究分野：睡眠科学，ヒューマンコンピュータインタラクション，生体信号解析，AI医療技術</p>
                         </div>
                         
                         <div class="hero-text" lang="zh">
                             <p>我是东京大学博士生，在割澤伸一教授指导下进行研究。我的研究旨在通过脑电、心电、皮肤电反应与呼吸等多模态生理信号，开发用于量化睡眠质量的指标。</p>
+                            <p>此外，我也在研究如何利用空调等睡眠环境设备，对睡眠过程中的热舒适环境进行自适应调节，从而改善睡眠质量与恢复效果。</p>
                             <p>研究方向包括睡眠科学、人机交互、生物信号分析，以及AI在医疗健康领域的应用。</p>
                         </div>
                         
@@ -783,298 +774,4 @@
                         <p lang="zh">负责AI数字人的制作以及内核数据库的搭建。</p>
                     </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-degree" lang="en">2024–Present: Research Assistant, Inclusive Engineering Collaboration Division (RIISE), The University of Tokyo</div>
-                        <div class="timeline-degree" lang="ja">2024–現在: 東京大学 インクルーシブ工学連携研究機構（RIISE）共創空間デザインプロジェクト 研究補佐</div>
-                        <div class="timeline-degree" lang="zh">2024–至今：东京大学 RIISE「共创空间设计」项目 研究助理</div>
-                        <p lang="en">Worked on a co-creation space design project, focusing on improving sleep quality through adaptive air-conditioning control systems.</p>
-                        <p lang="ja">共創空間デザインプロジェクトにおいて，空調制御を通じた睡眠の質の向上に関する研究に従事。</p>
-                        <p lang="zh">参与共创空间设计项目，研究如何通过空调控制系统提升睡眠质量。</p>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-degree" lang="en">2023–2024: Healthcarevision Inc. – Algorithm Development Intern</div>
-                        <div class="timeline-degree" lang="ja">2023–2024: Healthcarevision株式会社 アルゴリズム開発インターン</div>
-                        <div class="timeline-degree" lang="zh">2023–2024：Healthcarevision公司 算法实习生</div>
-                        <p lang="en">Worked on non-invasive blood glucose estimation algorithms using optical sensors; exhibited at CES 2024.</p>
-                        <p lang="ja">光学センサーを用いた非侵襲型血糖値推定アルゴリズムの開発に従事。CES 2024に出展。</p>
-                        <p lang="zh">负责使用光学传感器进行非侵入式血糖估计算法开发，成果在CES 2024展出。</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="publications">
-            <div class="container">
-                <h2 lang="en">Publications</h2>
-                <h2 lang="ja">発表</h2>
-                <h2 lang="zh">发表论文</h2>
-        
-                <h3 lang="en">International Conferences</h3>
-                <h3 lang="ja">国際会議</h3>
-                <h3 lang="zh">国际会议</h3>
-        
-                <div class="publications-container">
-                    <div class="publication-item">
-                        <div class="publication-title">
-                            Chijing Wang, Ryota Nitto, Yuki Ban, Miki Nakai, Jun'ichi Shimizu, Tomoyoshi Ashikaga, Shin'ichi Warisawa. 
-                            "Estimating Daytime Productivity from Sleep-Time Biosignals with a Reduced Feature Set."
-                        </div>
-                        <div class="publication-journal">
-                            <em>World Sleep, 526, 2025.</em> 
-                        </div>
-                    </div>
-                    <div class="publication-item">
-                        <div class="publication-title">
-                            Chijing Wang, Ryota Nitto, Takuo Kuroki, Yuki Ban, Miki Nakai, Jun'ichi Shimizu, Tomoyoshi Ashikaga, Shin'ichi Warisawa. 
-                            "Constructing a Transformer-Based Model to Infer Daytime Productivity from Biometric Information During Sleep."
-                        </div>
-                        <div class="publication-journal">
-                            <em>Human Systems Engineering and Design 158 (2024): 175.</em> 
-                        </div>
-                    </div>
-                </div>
-        
-                <h3 lang="en">Domestic Conferences</h3>
-                <h3 lang="ja">国内会議</h3>
-                <h3 lang="zh">国内会议</h3>
-        
-                <div class="publications-container">
-                    <div class="publication-item">
-                        <div class="publication-title">
-                            王馳景, 日塔諒太, 黒木琢央, 伴祐樹, 中井美希, 清水淳一, 足利朋義, 割澤伸一．
-                            睡眠時生体情報から日中生産性を推測するTransformerベースモデルの構築
-                        </div>
-                        <div class="publication-journal">
-                            情報処理学会 第86回全国大会, 5X-04, 2024
-                        </div>
-                    </div>
-        
-                    <div class="publication-item">
-                        <div class="publication-title">
-                            王馳景，中井美希，日塔諒太，伴祐樹，清水淳一，今井洋輔，割澤伸一．
-                            人間のサーカディアンリズムに沿った空調制御が睡眠の質と翌日の認知機能に与える影響
-                        </div>
-                        <div class="publication-journal">
-                            日本睡眠学会第49回定期学術集会，2025年6月
-                        </div>
-                    </div>
-        
-                    <div class="publication-item">
-                        <div class="publication-title">
-                            王馳景，日塔諒太，伴祐樹，中井美希，清水淳一，今井洋輔，割澤伸一．
-                            8時間睡眠条件下におけるコルチゾール分泌と睡眠の質の関係性
-                        </div>
-                        <div class="publication-journal">
-                            日本睡眠学会第49回定期学術集会，2025年6月
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-                                
-                                
-        <section id="awards">
-            <div class="container">
-                <h2 lang="en">Awards & Honors</h2>
-                <h2 lang="ja">受賞歴</h2>
-                <h2 lang="zh">获奖荣誉</h2>
-        
-                <div class="awards-container">
-                    <div class="award-item">
-                        <div class="award-title" lang="en">Young Investigator Award, Asian Society of Sleep Medicine, 2025</div>
-                        <div class="award-title" lang="ja">若手研究者奨励賞, アジア睡眠学会, 2025</div>
-                        <div class="award-title" lang="zh">青年研究者奖, 亚洲睡眠医学会, 2025</div>
-                    </div>
-                    <div class="award-item">
-                        <div class="award-title" lang="en">Ajinomoto Scholarship, 2025–2026</div>
-                        <div class="award-title" lang="ja">味の素奨学金, 味の素奨学会, 2025–2026</div>
-                        <div class="award-title" lang="zh">味之素奖学金, 味之素奖学会, 2025–2026</div>
-                    </div>
-
-                    <div class="award-item">
-                        <div class="award-title" lang="en">Demonstrated Non-invasive Blood Glucose Monitoring at CES 2024 (Healthcare Vision Inc.)</div>
-                        <div class="award-title" lang="ja">CES 2024にて非侵襲型血糖値モニタリングデバイスを発表（Healthcare Vision社）</div>
-                        <div class="award-title" lang="zh">在CES 2024展示非侵入式血糖监测设备（Healthcare Vision公司）</div>
-                        <div class="award-description" lang="en">CES Westgate — Booth 427 — Design & Source</div>
-                        <div class="award-description" lang="ja">CES Westgate — ブース427 — Design & Source</div>
-                        <div class="award-description" lang="zh">CES Westgate — 展位427 — Design & Source</div>
-                    </div>
-                    
-                    <div class="award-item">
-                        <div class="award-title" lang="en">Best Presentation Award, AWS Robot Delivery Challenge (Customization Category), 2021</div>
-                        <div class="award-title" lang="ja">AWSロボットデリバリーチャレンジ カスタマイズ部門 入賞, 2021</div>
-                        <div class="award-title" lang="zh">AWS机器人配送挑战赛 定制组 获奖, 2021</div>
-                    </div>
-
-                    <div class="award-item">
-                        <div class="award-title" lang="en">Finalist (Top 16), Icho Cup English Debate Tournament, 2019</div>
-                        <div class="award-title" lang="ja">イチョウ杯英語ディベート大会 ベスト16, 2019</div>
-                        <div class="award-title" lang="zh">银杏杯英语辩论赛16强, 2019</div>
-                    </div>
-
-                    <div class="award-item">
-                        <div class="award-title" lang="en">Monbukagakusho Honors Scholarship, JASSO, 2018–2019</div>
-                        <div class="award-title" lang="ja">旧文部科学省外国人留学生学習奨励費, 日本学生支援機構, 2018–2019</div>
-                        <div class="award-title" lang="zh">旧文部科学省优秀留学生奖学金, 日本学生支援机构, 2018–2019</div>
-                    </div>
-                    
-                    <div class="award-item">
-                        <div class="award-title" lang="en">Monbukagakusho Honors Scholarship, JASSO, 2016–2017</div>
-                        <div class="award-title" lang="ja">旧文部科学省外国人留学生学習奨励費, 日本学生支援機構, 2016–2017</div>
-                        <div class="award-title" lang="zh">旧文部科学省优秀留学生奖学金, 日本学生支援机构, 2016–2017</div>
-                    </div>
-        
-                    <div class="award-item">
-                        <div class="award-title" lang="en">National Olympiad in Informatics in Provinces, China, 2014</div>
-                        <div class="award-title" lang="ja">中国情報学オリンピック地方大会 入賞, 2014</div>
-                        <div class="award-title" lang="zh">中国省级信息学奥林匹克竞赛参赛 二等奖, 2014</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-        
-        <section id="skills">
-            <div class="container">
-                <h2 lang="en">Skills</h2>
-                <h2 lang="ja">スキル</h2>
-                <h2 lang="zh">技能</h2>
-        
-                <div class="skills-container">
-        
-                    <div class="skill-category">
-                        <h3 lang="en">Languages</h3>
-                        <h3 lang="ja">言語</h3>
-                        <h3 lang="zh">语言</h3>
-                        <ul class="skill-list">
-                            <li><i class="fas fa-language"></i> <span lang="en">Chinese (Native)</span><span lang="ja">中国語（ネイティブ）</span><span lang="zh">中文（母语）</span></li>
-                            <li><i class="fas fa-language"></i> <span lang="en">Japanese (Business)</span><span lang="ja">日本語（ビジネス）</span><span lang="zh">日语（商务）</span></li>
-                            <li><i class="fas fa-language"></i> <span lang="en">English (Business)</span><span lang="ja">英語（ビジネス）</span><span lang="zh">英语（商务）</span></li>
-                        </ul>
-                    </div>
-        
-                    <div class="skill-category">
-                        <h3 lang="en">Programming & AI</h3>
-                        <h3 lang="ja">プログラミング・AI</h3>
-                        <h3 lang="zh">编程与AI</h3>
-                        <ul class="skill-list">
-                            <li><i class="fas fa-code"></i> Python, PyTorch, TensorFlow, scikit-learn</li>
-                            <li><i class="fas fa-code"></i> MATLAB, R, C++</li>
-                            <li><i class="fas fa-brain"></i> Signal Processing, Time-series Analysis, LLM/Hugging Face API</li>
-                            <li><i class="fas fa-microchip"></i> Real-time biosignal data acquisition (e.g., Biosignalsplux)</li>
-                        </ul>
-                    </div>
-        
-                    <div class="skill-category">
-                        <h3 lang="en">Tools & Platforms</h3>
-                        <h3 lang="ja">ツール・プラットフォーム</h3>
-                        <h3 lang="zh">工具与平台</h3>
-                        <ul class="skill-list">
-                            <li><i class="fas fa-tools"></i> VS Code, Jupyter, GitHub</li>
-                            <li><i class="fas fa-vr-cardboard"></i> Unity, OpenCV, TouchDesigner</li>
-                            <li><i class="fas fa-video"></i> Adobe Photoshop, Canva</li>
-                            <li><i class="fas fa-database"></i> Firebase, AWS (Polly, S3), Google Colab</li>
-                        </ul>
-                    </div>
-        
-                    <div class="skill-category">
-                        <h3 lang="en">Soft Skills & Presentation</h3>
-                        <h3 lang="ja">ソフトスキル・発表力</h3>
-                        <h3 lang="zh">软技能与展示能力</h3>
-                        <ul class="skill-list">
-                            <li><i class="fas fa-comments"></i> English debate (Icho Cup top 16 & 8)</li>
-                            <li><i class="fas fa-microphone"></i> Research presentation & poster creation</li>
-                            <li><i class="fas fa-user-check"></i> Interdisciplinary teamwork & project management</li>
-                        </ul>
-                    </div>
-        
-                </div>
-            </div>
-        </section>
-
-        
-        <section id="contact">
-            <div class="container">
-                <h2 lang="en">Contact</h2>
-                <h2 lang="ja">連絡先</h2>
-                <h2 lang="zh">联系方式</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <ul>
-                            <li><i class="fas fa-envelope"></i> shizukurocalicocat@gmail.com / wang.chijing@s.h.k.u-tokyo.ac.jp</li>
-                            <li><i class="fas fa-map-marker-alt"></i> <span lang="en">University of Tokyo, Tokyo, Japan</span><span lang="ja">東京大学, 東京, 日本</span><span lang="zh">东京大学，东京，日本</span></li>
-                            <li><i class="fas fa-university"></i> <span lang="en">Graduate School of Frontier Sciences</span><span lang="ja">新領域創成科学研究科</span><span lang="zh">新领域创成科学研究科</span></li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p lang="en">&copy; 2025 Chijing Wang. All rights reserved.</p>
-            <p lang="ja">&copy; 2025 王馳景. 全著作権所有.</p>
-            <p lang="zh">&copy; 2025 王驰景. 版权所有.</p>
-            <p lang="en">Last updated: November 2025</p>
-            <p lang="ja">最終更新日: 2025年11月</p>
-            <p lang="zh">最后更新: 2025年11月</p>
-        </div>
-    </footer>
-    
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-    
-    <script>
-        // 语言切换器
-        const langSelect = document.getElementById('langSelect');
-        const body = document.body;
-        
-        langSelect.addEventListener('change', function() {
-            if (this.value === 'zh') {
-                body.classList.add('lang-zh');
-                body.classList.remove('lang-ja');
-            } else if (this.value === 'ja') {
-                body.classList.add('lang-ja');
-                body.classList.remove('lang-zh');
-            } else {
-                body.classList.remove('lang-zh');
-                body.classList.remove('lang-ja');
-            }
-        });
-
-        // 回到顶部按钮
-        const backToTop = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-        
-        backToTop.addEventListener('click', (e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-        
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+                    <div cl
