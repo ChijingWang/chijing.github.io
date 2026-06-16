@@ -317,7 +317,19 @@
             margin-bottom: 0.5rem;
             color: var(--text-color);
         }
-        
+
+        .timeline-item p a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .timeline-item p a:hover {
+            border-bottom-color: var(--primary-color);
+        }
+
         .publications-container {
             margin-top: 2rem;
         }
@@ -598,7 +610,7 @@
         <div class="header-container">
             <a href="#" class="logo">Chijing Wang 王 驰景</a>
             <ul class="nav-links">
-                <li><a href="#projects" lang="en">Projects</a><a href="#projects" lang="ja">研究</a><a href="#projects" lang="zh">研究项目</a></li>
+                <li><a href="#projects" lang="en">Projects</a><a href="#projects" lang="ja">研究プロジェクト</a><a href="#projects" lang="zh">研究项目</a></li>
                 <li><a href="#education" lang="en">Education</a><a href="#education" lang="ja">教育</a><a href="#education" lang="zh">教育背景</a></li>
                 <li><a href="#job" lang="en">Job Experience</a><a href="#job" lang="ja">職歴</a><a href="#job" lang="zh">工作经历</a></li>
                 <li><a href="#publications" lang="en">Publications</a><a href="#publications" lang="ja">発表</a><a href="#publications" lang="zh">发表论文</a></li>
@@ -760,36 +772,39 @@
                 <div class="timeline">
 
                     <div class="timeline-item">
-                        <div class="timeline-degree" lang="en">2025.6–Present: Data Scientist Intern at Matsuo Institute, Inc.</div>
-                        <div class="timeline-degree" lang="ja">2025.6–現在: 松尾研究所 データサイエンティストインターン</div>
-                        <div class="timeline-degree" lang="zh">2025.6–至今：松尾研究所 实习数据工程师</div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-degree" lang="en">2024.12–2025.9: AI Engineer Intern at Metatech</div>
-                        <div class="timeline-degree" lang="ja">2024.12–2025.9: Metatech AIエンジニア インターン</div>
-                        <div class="timeline-degree" lang="zh">2024.12–2025.9：Metatech AI工程师 实习生</div>
-                        <p lang="en">Responsible for AI digital human production and kernel database construction.</p>
-                        <p lang="ja">AIデジタルヒューマンの制作およびカーネルデータベースの構築を担当。</p>
-                        <p lang="zh">负责AI数字人的制作以及内核数据库的搭建。</p>
+                        <div class="timeline-degree" lang="en">2025.6–2026.6: Data Scientist Intern at Matsuo Institute, Inc.</div>
+                        <div class="timeline-degree" lang="ja">2025.6–2026.6: 株式会社松尾研究所 データサイエンティスト インターン</div>
+                        <div class="timeline-degree" lang="zh">2025.6–2026.6：松尾研究所 数据科学家 实习生</div>
+                        <p lang="en">As a data scientist, developed algorithms to quantify and visualize the relationship between employees' movement and behavior patterns in the office and their work productivity. For long-term, large-scale experimental data, I formulated hypotheses grounded in prior research and ran iterative statistical validation, deriving insights that contribute to office design and employee performance. By communicating closely with the client to align on the goals and direction of the analysis, I connected the results directly to practical business needs. The findings were presented at <a href="https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/1F5-OS-10c-02" target="_blank">JSAI 2026</a>.</p>
+                        <p lang="ja">株式会社松尾研究所にて、データサイエンティストとして、オフィス内の従業員の移動・行動パターンと業務生産性の関係を定量化・可視化するアルゴリズムの開発に従事しました。長期間・大規模な実験データに対して先行研究をもとに仮説を立案し、統計的検証を繰り返すことで、オフィス設計および従業員のパフォーマンス向上に貢献する知見を導出しました。クライアントと密にコミュニケーションを取り、分析の目的・方向性について認識を合わせながら進めることで、成果を実務ニーズに直結させました。成果は<a href="https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/1F5-OS-10c-02" target="_blank">JSAI2026</a>にて発表しました。</p>
+                        <p lang="zh">在株式会社松尾研究所担任数据科学家，从事将办公室内员工的移动·行为模式与工作生产力关系进行量化与可视化的算法开发。针对长期、大规模的实验数据，基于先行研究提出假设并反复进行统计验证，导出有助于办公空间设计与员工绩效提升的洞见。通过与客户密切沟通、对齐分析的目的与方向，使成果直接对接实务需求。成果在 <a href="https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/1F5-OS-10c-02" target="_blank">JSAI2026</a> 上发表。</p>
                     </div>
 
                     <div class="timeline-item">
-                        <div class="timeline-degree" lang="en">2024–Present: Research Assistant, Inclusive Engineering Collaboration Division (RIISE), The University of Tokyo</div>
-                        <div class="timeline-degree" lang="ja">2024–現在: 東京大学 インクルーシブ工学連携研究機構（RIISE）共創空間デザインプロジェクト 研究補佐</div>
-                        <div class="timeline-degree" lang="zh">2024–至今：东京大学 RIISE「共创空间设计」项目 研究助理</div>
-                        <p lang="en">Worked on a co-creation space design project, focusing on improving sleep quality through adaptive air-conditioning control systems.</p>
-                        <p lang="ja">共創空間デザインプロジェクトにおいて，空調制御を通じた睡眠の質の向上に関する研究に従事。</p>
-                        <p lang="zh">参与共创空间设计项目，研究如何通过空调控制系统提升睡眠质量。</p>
+                        <div class="timeline-degree" lang="en">2024.12–2025.9: AI Engineer Intern at Metatech, Inc.</div>
+                        <div class="timeline-degree" lang="ja">2024.12–2025.9: 株式会社metatech AIエンジニア インターン</div>
+                        <div class="timeline-degree" lang="zh">2024.12–2025.9：metatech AI工程师 实习生</div>
+                        <p lang="en">At <a href="https://www.metatechjp.com/" target="_blank">Metatech</a>, developed an AI reception system that combines AI with metaverse technology. To address labor shortages in the service industry, I implemented a mechanism that switches between dedicated databases for each use case (hotels, tourist spots, schools, etc.) to generate responses, and built voice-recognition-based inquiry handling and facility-guidance features. The demo was exhibited at the <a href="https://web3.teamz.co.jp/teamz-web3-summit-2025-shutten-sha" target="_blank">Teamz Web3 Summit</a> in April 2025.</p>
+                        <p lang="ja"><a href="https://www.metatechjp.com/" target="_blank">株式会社metatech</a>にて、AIとメタバース技術を組み合わせたAIレセプション（AI受付システム）の開発に取り組みました。サービス業界における人手不足に対応するため、利用シーン（ホテル・観光地・学校など）ごとに専用データベースを切り替えて応答する仕組みを実装し、音声認識による問い合わせ対応・施設案内機能を構築しました。デモ版は2025年4月の<a href="https://web3.teamz.co.jp/teamz-web3-summit-2025-shutten-sha" target="_blank">Teamz Web3 Summit</a>にて展示しました。</p>
+                        <p lang="zh">在 <a href="https://www.metatechjp.com/" target="_blank">metatech</a> 从事结合AI与元宇宙技术的AI接待系统（AI前台）开发。为应对服务行业的人手短缺，实现了按使用场景（酒店、景区、学校等）切换专用数据库进行应答的机制，并构建了基于语音识别的咨询应答与设施引导功能。演示版于2025年4月的 <a href="https://web3.teamz.co.jp/teamz-web3-summit-2025-shutten-sha" target="_blank">Teamz Web3 Summit</a> 展出。</p>
                     </div>
 
                     <div class="timeline-item">
-                        <div class="timeline-degree" lang="en">2023–2024: Healthcarevision Inc. – Algorithm Development Intern</div>
-                        <div class="timeline-degree" lang="ja">2023–2024: Healthcarevision株式会社 アルゴリズム開発インターン</div>
-                        <div class="timeline-degree" lang="zh">2023–2024：Healthcarevision公司 算法实习生</div>
-                        <p lang="en">Worked on non-invasive blood glucose estimation algorithms using optical sensors; exhibited at CES 2024.</p>
-                        <p lang="ja">光学センサーを用いた非侵襲型血糖値推定アルゴリズムの開発に従事。CES 2024に出展。</p>
-                        <p lang="zh">负责使用光学传感器进行非侵入式血糖估计算法开发，成果在CES 2024展出。</p>
+                        <div class="timeline-degree" lang="en">2024.4–2026.6: Research Assistant, Research Institute for an Inclusive Society through Engineering (RIISE), The University of Tokyo</div>
+                        <div class="timeline-degree" lang="ja">2024.4–2026.6: 東京大学 インクルーシブ工学連携研究機構（RIISE）共創空間デザインプロジェクト 研究補佐</div>
+                        <div class="timeline-degree" lang="zh">2024.4–2026.6：东京大学 包容性工学协同研究机构（RIISE）「共创空间设计」项目 研究助理</div>
+                        <p lang="en">In the <a href="https://www.riise.u-tokyo.ac.jp/research_programs/sdc/" target="_blank">Co-creation Space Design Project</a> at the University of Tokyo's RIISE, I conducted research on realizing restful sleep environments. By analyzing multiple types of biosignals during sleep—ECG, EDA, respiration, and body movement—I quantitatively clarified the conditions for high-quality sleep that improves next-day productivity. Building on these findings, I developed and validated a real-time, biosignal-driven automatic air-conditioning control system, presenting the results at 5 international and 3 domestic conferences (<a href="https://www.riise.u-tokyo.ac.jp/research_programs/sdc/publications" target="_blank">publications</a>).</p>
+                        <p lang="ja">東京大学 インクルーシブ工学連携研究機構（RIISE）<a href="https://www.riise.u-tokyo.ac.jp/research_programs/sdc/" target="_blank">共創空間デザインプロジェクト</a>にて、研究補佐として快眠環境の実現に関する研究に従事しました。睡眠中の心電・皮膚電位・呼吸・体動といった多種類の生体信号を解析し、翌日の生産性向上につながる良質な睡眠の条件を定量的に解明しました。さらに、その知見に基づいてリアルタイム生体情報を用いたエアコン自動制御システムを構築・効果検証し、国際学会5件・国内学会3件にて成果を<a href="https://www.riise.u-tokyo.ac.jp/research_programs/sdc/publications" target="_blank">発表</a>しました。</p>
+                        <p lang="zh">在东京大学 包容性工学协同研究机构（RIISE）<a href="https://www.riise.u-tokyo.ac.jp/research_programs/sdc/" target="_blank">「共创空间设计」项目</a>中担任研究助理，从事舒适睡眠环境实现的研究。通过分析睡眠中的心电、皮肤电位、呼吸、体动等多种生理信号，定量阐明了有助于提升次日生产力的优质睡眠条件。并基于这些发现构建并验证了利用实时生理信息的空调自动控制系统，成果在5场国际会议与3场国内会议上<a href="https://www.riise.u-tokyo.ac.jp/research_programs/sdc/publications" target="_blank">发表</a>。</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-degree" lang="en">2023.9–2024.9: Algorithm Development Intern at Healthcarevision, Inc.</div>
+                        <div class="timeline-degree" lang="ja">2023.9–2024.9: 株式会社Healthcarevision アルゴリズム開発インターン</div>
+                        <div class="timeline-degree" lang="zh">2023.9–2024.9：Healthcarevision 算法开发 实习生</div>
+                        <p lang="en">At <a href="https://www.healthcarevision.net/" target="_blank">Healthcarevision</a>, developed a non-invasive optical blood glucose measurement algorithm. By illuminating a fingertip and using the spectrum of light reflected from the blood vessels as training data, I built a machine learning model that estimates blood glucose without needles. The system ultimately achieved an estimation accuracy within ±15%, and the device featuring this algorithm was exhibited to acclaim at <a href="https://www.medicaldesignandoutsourcing.com/ces-2024-medical-technologies-you-need-to-know/" target="_blank">CES 2024</a>.</p>
+                        <p lang="ja"><a href="https://www.healthcarevision.net/" target="_blank">株式会社Healthcarevision</a>にて、非侵襲的光学式血糖値計測アルゴリズムの開発に従事しました。指に光を照射し、血管からの反射光スペクトルを学習データとして機械学習モデルを構築することで、針を刺さずに血糖値を推定するシステムを実現しました。最終的に±15%以内の推定精度を達成し、本アルゴリズムを搭載したデバイスは2024年の<a href="https://www.medicaldesignandoutsourcing.com/ces-2024-medical-technologies-you-need-to-know/" target="_blank">CES</a>にて展示・好評を博しました。</p>
+                        <p lang="zh">在 <a href="https://www.healthcarevision.net/" target="_blank">Healthcarevision</a> 从事非侵入式光学血糖测量算法开发。通过向手指照射光线，将血管反射光谱作为训练数据构建机器学习模型，实现无需针刺的血糖估计。最终达到±15%以内的估计精度，搭载该算法的设备在2024年的 <a href="https://www.medicaldesignandoutsourcing.com/ces-2024-medical-technologies-you-need-to-know/" target="_blank">CES</a> 上展出并广受好评。</p>
                     </div>
 
                 </div>
