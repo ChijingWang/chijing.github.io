@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Chijing Wang — Resume</title>
+<!-- Web fonts are only used where the macOS fonts in resume.css are missing (e.g. Windows builds);
+     static fontsource files keep the PDF fonts as real TrueType instead of Type3 glyphs -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400-italic.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-jp@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-jp@5/700.css">
 <link rel="stylesheet" href="resume.css">
 </head>
 <body class="en">
@@ -14,14 +21,14 @@
     <div class="headline">PhD Candidate, Sleep Science &amp; Biosignal AI — University of Tokyo</div>
     <div class="contact">
       <b>Tokyo, Japan</b><span class="sep">|</span><a href="mailto:shizukurocalicocat@gmail.com">shizukurocalicocat@gmail.com</a><span class="sep">|</span><a href="mailto:wang.chijing@s.h.k.u-tokyo.ac.jp">wang.chijing@s.h.k.u-tokyo.ac.jp</a><br>
-      <a href="https://chijing-wang.com/">chijing-wang.com</a><span class="sep">|</span><a href="https://scholar.google.com/citations?user=DMzbiOwAAAAJ">Google Scholar</a><span class="sep">|</span><a href="https://github.com/ChijingWang">github.com/ChijingWang</a><span class="sep">|</span><a href="https://linkedin.com/in/%E9%A6%B3%E6%99%AF-%E7%8E%8B">LinkedIn</a>
+      <a href="https://chijing-wang.com/">chijing-wang.com</a><span class="sep">|</span><a href="https://scholar.google.com/citations?user=DMzbiOwAAAAJ">Google Scholar</a><span class="sep">|</span><a href="https://github.com/ChijingWang">github.com/ChijingWang</a><span class="sep">|</span><a href="https://www.linkedin.com/in/%E9%A6%B3%E6%99%AF-%E7%8E%8B-58b942285/">LinkedIn</a>
     </div>
   </div>
 </header>
 
 <h2>PROFILE</h2>
 <div class="sec">
-  <p>PhD candidate at the <b>University of Tokyo (HeiLab)</b>, advised by Prof. Shin'ichi Warisawa and Assoc. Prof. Yuki Ban. Research develops quantitative indicators of sleep quality by integrating biosignals (EEG, ECG, EDA, respiration) with AI modeling, and adaptive control of the sleep environment (e.g. air conditioning) to regulate thermal comfort and improve overnight recovery. Brings hands-on AI-engineering experience (RAG systems, multimodal biosignal pipelines) across four industry internships, and is a team member of the early-stage startup <b>Elephane</b> (embodied AI, next-gen wearable sensing). Interests: sleep science, human-computer interaction, biosignal analysis, AI-driven healthcare.</p>
+  <p>PhD candidate at the <b>University of Tokyo (HeiLab)</b>, advised by Prof. Shin'ichi Warisawa and Assoc. Prof. Yuki Ban. Research develops quantitative indicators of sleep quality by integrating biosignals (EEG, ECG, EDA, respiration) with AI modeling, and adaptive control of the sleep environment (e.g. air conditioning) to regulate thermal comfort and improve overnight recovery. Brings hands-on AI-engineering experience (RAG systems, multimodal biosignal pipelines, VLM-based computer vision) from four industry internships and an industry–academia joint research project, and is a team member of the early-stage startup <b>Elephane</b> (embodied AI, next-gen wearable sensing). Interests: sleep science, human-computer interaction, biosignal analysis, AI-driven healthcare.</p>
 </div>
 
 <h2>EDUCATION</h2>
@@ -43,9 +50,18 @@
 <h2>EXPERIENCE</h2>
 <div class="sec">
   <div class="entry">
-    <div class="head"><span class="title">Sleep Advisor<span class="dash"> — </span>Lavie Innovations Pte. Ltd.</span><span class="date">2026.08 – Present</span></div>
+    <div class="head"><span class="title">Industry–Academia Joint Research (Computer Vision)<span class="dash"> — </span>The University of Tokyo</span><span class="date">2026.04 – Present</span></div>
+    <div class="note">With a road-infrastructure company; results unpublished, details confidential.</div>
     <ul class="bul">
-      <li>Launching an employee sleep-health monitoring program for corporate clients (part-time, remote).</li>
+      <li>Building a training-free segmentation pipeline for infrastructure-inspection photos: each new equipment type is added with a few annotated examples instead of a labelled dataset and retraining.</li>
+      <li>Pairs few-shot vision-language-model (VLM) localization with SAM 2.1 segmentation; an automatic check re-selects or rejects unreliable masks before downstream condition assessment.</li>
+      <li>Hardened VLM output parsing against format mismatches and truncated replies, with automatic retries.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="head"><span class="title">Sleep Advisor<span class="dash"> — </span>Lavie Innovations Pte. Ltd.</span><span class="date">2026.07 – 2026.09</span></div>
+    <ul class="bul">
+      <li>Helped launch an employee sleep-health monitoring program for corporate clients (part-time, remote).</li>
     </ul>
   </div>
   <div class="entry">
@@ -132,7 +148,7 @@
 <div class="sec">
   <table class="skills">
     <tr><th>Languages</th><td>Chinese (Native), Japanese (Business), English (Business)</td></tr>
-    <tr><th>Programming &amp; AI</th><td>Python, PyTorch, TensorFlow, scikit-learn, MATLAB, R, C++; signal processing, time-series analysis; LLM / Hugging Face API; RAG system design (chunk optimization; vector DBs: Chroma / FAISS / Pinecone / pgvector); multimodal biosignal fusion &amp; real-time acquisition (Biosignalsplux)</td></tr>
+    <tr><th>Programming &amp; AI</th><td>Python, PyTorch, TensorFlow, scikit-learn, MATLAB, R, C++; signal processing, time-series analysis; LLM / Hugging Face API; RAG system design (chunk optimization; vector DBs: Chroma / FAISS / Pinecone / pgvector); multimodal biosignal fusion &amp; real-time acquisition (Biosignalsplux); computer vision (SAM 2.1 segmentation, few-shot VLM prompting)</td></tr>
     <tr><th>Tools &amp; Platforms</th><td>Git/GitHub, Jupyter, VS Code; Unity, OpenCV, TouchDesigner; Firebase, AWS (Polly, S3), Google Colab; Photoshop, Canva</td></tr>
     <tr><th>Soft Skills</th><td>English debate (Icho Cup top 16 &amp; 8); research presentation &amp; poster creation; interdisciplinary teamwork &amp; project management</td></tr>
   </table>

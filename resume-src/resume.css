@@ -6,8 +6,8 @@
   --muted: #5f6368;
   --faint: #9aa0a6;
   --hair: #dadce0;
-  --fs: 12.75px;       /* body text */
-  --lh: 1.42;
+  --fs: 12.3px;        /* body text */
+  --lh: 1.38;
 }
 
 @page { size: A4; margin: 11mm 15mm 10mm; }
@@ -20,11 +20,12 @@ body {
   color: var(--body);
   background: #fff;
 }
-body.en { font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; }
-body.ja { font-family: "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif; }
-body.zh { font-family: "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", sans-serif; }
-body.ja { --lh: 1.5; }   /* CJK text needs a little more leading */
-body.zh { --lh: 1.46; }
+/* macOS fonts first; Inter / Noto Sans (web fonts linked in the HTML) stand in on Windows and Linux */
+body.en { font-family: "Helvetica Neue", Inter, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif; }
+body.ja { font-family: "Helvetica Neue", Inter, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+body.zh { font-family: "Helvetica Neue", Inter, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif; }
+body.ja { --lh: 1.46; }   /* CJK text needs a little more leading */
+body.zh { --lh: 1.42; }
 a { color: inherit; text-decoration: none; }
 b, strong { font-weight: 700; color: var(--ink); }
 
@@ -59,7 +60,10 @@ h2::before { content: ""; width: 7px; height: 7px; background: var(--blue); flex
 .sec { border-left: 3px solid var(--blue); padding-left: 11px; }
 
 /* ---------- Entries (education / experience / competitions) ---------- */
-.entry { margin-bottom: 6px; break-inside: avoid; }
+.entry { margin-bottom: 6px; }
+/* entries may continue on the next page, but never break right after their title or note */
+.head, .note { break-after: avoid; }
+.note, ul.bul li { break-inside: avoid; }
 .entry:last-child { margin-bottom: 0; }
 .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .title { font-weight: 700; color: var(--ink); }

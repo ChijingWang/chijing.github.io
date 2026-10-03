@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>王驰景 — 简历</title>
+<!-- Web fonts are only used where the macOS fonts in resume.css are missing (e.g. Windows builds);
+     static fontsource files keep the PDF fonts as real TrueType instead of Type3 glyphs -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5/900.css">
 <link rel="stylesheet" href="resume.css">
 </head>
 <body class="zh">
@@ -14,14 +21,14 @@
     <div class="headline">博士研究生 · 睡眠科学与生物信号AI — 东京大学</div>
     <div class="contact">
       <b>日本 · 东京</b><span class="sep">|</span><a href="mailto:shizukurocalicocat@gmail.com">shizukurocalicocat@gmail.com</a><span class="sep">|</span><a href="mailto:wang.chijing@s.h.k.u-tokyo.ac.jp">wang.chijing@s.h.k.u-tokyo.ac.jp</a><br>
-      <a href="https://chijing-wang.com/">chijing-wang.com</a><span class="sep">|</span><a href="https://scholar.google.com/citations?user=DMzbiOwAAAAJ">Google Scholar</a><span class="sep">|</span><a href="https://github.com/ChijingWang">github.com/ChijingWang</a><span class="sep">|</span><a href="https://linkedin.com/in/%E9%A6%B3%E6%99%AF-%E7%8E%8B">LinkedIn</a>
+      <a href="https://chijing-wang.com/">chijing-wang.com</a><span class="sep">|</span><a href="https://scholar.google.com/citations?user=DMzbiOwAAAAJ">Google Scholar</a><span class="sep">|</span><a href="https://github.com/ChijingWang">github.com/ChijingWang</a><span class="sep">|</span><a href="https://www.linkedin.com/in/%E9%A6%B3%E6%99%AF-%E7%8E%8B-58b942285/">LinkedIn</a>
     </div>
   </div>
 </header>
 
 <h2>个人简介</h2>
 <div class="sec">
-  <p>东京大学大学院（<b>HeiLab</b>）博士在读，师从割泽伸一教授与伴祐树副教授。研究方向为整合脑电、心电、皮肤电、呼吸等多种生物信号与AI建模，构建睡眠质量的定量评价指标，并通过空调等睡眠环境的自适应控制调节温热舒适度、提升夜间身心恢复。经四段企业实习与创业实践（<b>Elephane</b>：具身智能、下一代可穿戴传感），具备<b>从概念到落地</b>的全流程能力：AI Agent与模型开发、生物数据分析、数据库搭建与前后端通信、UI/UX设计、数字角色建模、可穿戴设备设计及市场分析。研究兴趣：睡眠科学、人机交互、生物信号分析、AI医疗健康。</p>
+  <p>东京大学大学院（<b>HeiLab</b>）博士在读，师从割泽伸一教授与伴祐树副教授。研究方向为整合脑电、心电、皮肤电、呼吸等多种生物信号与AI建模，构建睡眠质量的定量评价指标，并通过空调等睡眠环境的自适应控制调节温热舒适度、提升夜间身心恢复。经四段企业实习、产学共同研究与创业实践（<b>Elephane</b>：具身智能、下一代可穿戴传感），具备<b>从概念到落地</b>的全流程能力：AI Agent与模型开发、计算机视觉、生物数据分析、数据库搭建与前后端通信、UI/UX设计、数字角色建模、可穿戴设备设计及市场分析。研究兴趣：睡眠科学、人机交互、生物信号分析、AI医疗健康。</p>
 </div>
 
 <h2>教育经历</h2>
@@ -43,7 +50,16 @@
 <h2>工作经历</h2>
 <div class="sec">
   <div class="entry">
-    <div class="head"><span class="title">睡眠专家（睡眠顾问）<span class="dash"> — </span>Lavie Innovations Pte. Ltd.</span><span class="date">2026.08 – 至今</span></div>
+    <div class="head"><span class="title">产学共同研究（计算机视觉）<span class="dash"> — </span>东京大学</span><span class="date">2026.04 – 至今</span></div>
+    <div class="note">与道路基础设施相关企业的共同研究（成果尚未发表，细节保密）。</div>
+    <ul class="bul">
+      <li>面向基础设施巡检照片，构建无需训练的图像分割流程：每类设备只需少量标注样例，无需收集数据集或重新训练模型。</li>
+      <li>结合视觉语言模型（VLM）的少样本提示定位与SAM 2.1像素级分割，并通过自动校验对低置信度掩膜进行重选或剔除，再交给后续的状态评估。</li>
+      <li>针对VLM输出格式不一致、响应截断等问题，实现健壮解析与自动重试，提升流程稳定性。</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="head"><span class="title">睡眠专家（睡眠顾问）<span class="dash"> — </span>Lavie Innovations Pte. Ltd.</span><span class="date">2026.07 – 2026.09</span></div>
     <ul class="bul">
       <li>负责面向企业客户的员工睡眠健康监测项目的启动与搭建（兼职、远程）。</li>
     </ul>
@@ -132,7 +148,7 @@
 <div class="sec">
   <table class="skills">
     <tr><th>语言</th><td>中文（母语）、日语（商务）、英语（商务）</td></tr>
-    <tr><th>AI与模型</th><td>AI Agent设计与开发（LLM编排、工具调用、Hugging Face API）；RAG系统设计（分块优化；向量数据库：Chroma / FAISS / Pinecone / pgvector）；机器学习/深度学习建模（Python, PyTorch, TensorFlow, scikit-learn, C++；Transformer时序模型）</td></tr>
+    <tr><th>AI与模型</th><td>AI Agent设计与开发（LLM编排、工具调用、Hugging Face API）；RAG系统设计（分块优化；向量数据库：Chroma / FAISS / Pinecone / pgvector）；机器学习/深度学习建模（Python, PyTorch, TensorFlow, scikit-learn, C++；Transformer时序模型）；计算机视觉（SAM 2.1分割、VLM少样本提示）</td></tr>
     <tr><th>生物数据分析</th><td>多模态生物信号（脑电、心电、皮肤电、呼吸、体动）处理与融合；信号处理、时间序列分析、统计建模与验证（MATLAB, R）；实时生理数据采集（Biosignalsplux）</td></tr>
     <tr><th>数据库与全栈</th><td>数据库设计与搭建（向量数据库、Firebase）；前后端通信与API集成（实时数据传输、语音交互、设备控制）；AWS (Polly, S3)</td></tr>
     <tr><th>设计与建模</th><td>UI/UX设计（界面与交互原型；Photoshop, Canva）；数字猫咪等3D数字角色建模（Unity, TouchDesigner, OpenCV）</td></tr>

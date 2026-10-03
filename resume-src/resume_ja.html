@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>王 馳景 — レジュメ</title>
+<!-- Web fonts are only used where the macOS fonts in resume.css are missing (e.g. Windows builds);
+     static fontsource files keep the PDF fonts as real TrueType instead of Type3 glyphs -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-jp@5/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-jp@5/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-jp@5/900.css">
 <link rel="stylesheet" href="resume.css">
 </head>
 <body class="ja">
@@ -14,14 +21,14 @@
     <div class="headline">博士課程／睡眠科学・生体信号AI — 東京大学大学院</div>
     <div class="contact">
       <b>東京都</b><span class="sep">|</span><a href="mailto:shizukurocalicocat@gmail.com">shizukurocalicocat@gmail.com</a><span class="sep">|</span><a href="mailto:wang.chijing@s.h.k.u-tokyo.ac.jp">wang.chijing@s.h.k.u-tokyo.ac.jp</a><br>
-      <a href="https://chijing-wang.com/">chijing-wang.com</a><span class="sep">|</span><a href="https://scholar.google.com/citations?user=DMzbiOwAAAAJ">Google Scholar</a><span class="sep">|</span><a href="https://github.com/ChijingWang">github.com/ChijingWang</a><span class="sep">|</span><a href="https://linkedin.com/in/%E9%A6%B3%E6%99%AF-%E7%8E%8B">LinkedIn</a>
+      <a href="https://chijing-wang.com/">chijing-wang.com</a><span class="sep">|</span><a href="https://scholar.google.com/citations?user=DMzbiOwAAAAJ">Google Scholar</a><span class="sep">|</span><a href="https://github.com/ChijingWang">github.com/ChijingWang</a><span class="sep">|</span><a href="https://www.linkedin.com/in/%E9%A6%B3%E6%99%AF-%E7%8E%8B-58b942285/">LinkedIn</a>
     </div>
   </div>
 </header>
 
 <h2>プロフィール</h2>
 <div class="sec">
-  <p><b>東京大学大学院（HeiLab）</b>博士課程に在籍。割澤伸一教授・伴祐樹准教授の指導のもと、脳波・心電・皮膚電位・呼吸などの生体情報とAIモデルを統合した睡眠の質の定量評価指標の開発、および空調などを用いた睡眠環境の適応制御による温熱快適性・回復の向上に取り組む。RAGシステムの設計・実装やAIエンジニアリングの実務経験を持ち、具身AIと次世代ウェアラブルセンシングに取り組むスタートアップ<b>Elephane</b>のチームメンバーとしても活動。研究分野：睡眠科学、ヒューマンコンピュータインタラクション、生体信号解析、AI医療技術。</p>
+  <p><b>東京大学大学院（HeiLab）</b>博士課程に在籍。割澤伸一教授・伴祐樹准教授の指導のもと、脳波・心電・皮膚電位・呼吸などの生体情報とAIモデルを統合した睡眠の質の定量評価指標の開発、および空調などを用いた睡眠環境の適応制御による温熱快適性・回復の向上に取り組む。RAGシステムの設計・実装やVLMを用いた画像認識など、AIエンジニアリングの実務経験を持ち、具身AIと次世代ウェアラブルセンシングに取り組むスタートアップ<b>Elephane</b>のチームメンバーとしても活動。研究分野：睡眠科学、ヒューマンコンピュータインタラクション、生体信号解析、AI医療技術。</p>
 </div>
 
 <h2>学歴</h2>
@@ -43,7 +50,16 @@
 <h2>職歴</h2>
 <div class="sec">
   <div class="entry">
-    <div class="head"><span class="title">睡眠専門家（スリープアドバイザー）<span class="dash"> — </span>Lavie Innovations Pte. Ltd.</span><span class="date">2026.08 – 現在</span></div>
+    <div class="head"><span class="title">産学共同研究（コンピュータビジョン）<span class="dash"> — </span>東京大学</span><span class="date">2026.04 – 現在</span></div>
+    <div class="note">道路インフラ関連企業との共同研究（成果未発表のため詳細は非公開）。</div>
+    <ul class="bul">
+      <li>インフラ点検写真向けに、学習不要の画像セグメンテーション・パイプラインを構築中。設備の種類ごとに数組の見本を与えるだけで対応でき、データセット収集や再学習が不要。</li>
+      <li>VLMのFew-Shotプロンプトによる対象の定位とSAM 2.1による画素単位の領域抽出を組み合わせ、信頼度の低いマスクは自動検証で再選択・棄却してから後段の状態判定へ渡す。</li>
+      <li>VLM出力の形式不一致や応答の途中切れに対し、頑健なパーサと自動リトライを実装して安定化。</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="head"><span class="title">睡眠専門家（スリープアドバイザー）<span class="dash"> — </span>Lavie Innovations Pte. Ltd.</span><span class="date">2026.07 – 2026.09</span></div>
     <ul class="bul">
       <li>法人顧客向け「従業員睡眠健康モニタリングプログラム」の立ち上げに従事（パート・リモート）。</li>
     </ul>
@@ -132,7 +148,7 @@
 <div class="sec">
   <table class="skills">
     <tr><th>言語</th><td>中国語（ネイティブ）、日本語（ビジネス）、英語（ビジネス）</td></tr>
-    <tr><th>プログラミング・AI</th><td>Python, PyTorch, TensorFlow, scikit-learn, MATLAB, R, C++; 信号処理・時系列解析; LLM / Hugging Face API; RAGシステム設計（チャンク最適化、ベクトルDB: Chroma / FAISS / Pinecone / pgvector）; マルチモーダル生体信号融合・リアルタイム取得（Biosignalsplux）</td></tr>
+    <tr><th>プログラミング・AI</th><td>Python, PyTorch, TensorFlow, scikit-learn, MATLAB, R, C++; 信号処理・時系列解析; LLM / Hugging Face API; RAGシステム設計（チャンク最適化、ベクトルDB: Chroma / FAISS / Pinecone / pgvector）; マルチモーダル生体信号融合・リアルタイム取得（Biosignalsplux）; 画像認識（SAM 2.1によるセグメンテーション、VLMのFew-Shotプロンプト）</td></tr>
     <tr><th>ツール</th><td>Git/GitHub, Jupyter, VS Code; Unity, OpenCV, TouchDesigner; Firebase, AWS (Polly, S3), Google Colab; Photoshop, Canva</td></tr>
     <tr><th>ソフトスキル</th><td>英語ディベート（イチョウ杯ベスト16・8）; 研究発表・ポスター作成; 学際的チームワーク・プロジェクトマネジメント</td></tr>
   </table>
