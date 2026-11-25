@@ -6,11 +6,11 @@
   --muted: #5f6368;
   --faint: #9aa0a6;
   --hair: #dadce0;
-  --fs: 12.3px;        /* body text */
+  --fs: 12px;          /* body text */
   --lh: 1.38;
 }
 
-@page { size: A4; margin: 11mm 15mm 10mm; }
+@page { size: A4; margin: 10mm 14mm 9mm; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
